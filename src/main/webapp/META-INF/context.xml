@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context path="/angularjs_javaee" reloadable="true">
+    <Resource antiJARLocking="false" antiResourceLocking="false" 
+              auth="Container" defaultAutoCommit="false" driverClassName="org.postgresql.Driver" 
+              initialSize="10" maxActive="50" maxIdle="10" maxWait="10" minEvictableIdleTimeMillis="60000" 
+              name="jdbc/datasouce" numTestsPerEvictionRun="5" password="16marioe" testOnBorrow="true" 
+              testWhileIdle="true" timeBetweenEvictionRunsMillis="5000" type="javax.sql.DataSource" 
+              url="jdbc:postgresql://localhost:5432/angularjs_spring_restful?autoReconnect=true" 
+              username="postgres" validationQuery="SELECT &apos;OK&apos;"/>
+    <!-- http://tomee.apache.org/datasource-config.html -->
+    <!-- maxActive máximo transações ativas -->
+    <!-- maxIdle máximo transações intativas no pool -->
+    <!-- maxWait tempo máximo sem conexão no pool -->
+    <!-- initialSize conexões iniciais no pool -->
+    <!-- validationQuery valida a conexão fazendo select -->
+    <!-- testWhileIdle testa conexões validas -->
+    <!-- testOnBorrow validar conexões antes de remover -->
+    <!-- numTestsPerEvictionRun número de conexões a validar -->
+    <!-- timeBetweenEvictionRunsMillis tempo entre as validações de conexão -->
+    <!-- minEvictableIdleTimeMillis quantidade de tempo que a conexão pode ficar ocisosa -->
+    <!-- antiJARLocking evita o bloqueio de arquivos JAR em processos do servidor -->
+    <!-- antiResourceLocking não permite bloqueio de arquivos em processos  e JARs -->
+</Context>
